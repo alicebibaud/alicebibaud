@@ -55,7 +55,6 @@ body {
 
 .banner {
   min-width: 50vw;
-  min-height:  30vh;
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -65,9 +64,10 @@ body {
   /* text */
   color: white;
   text-align: center;
-  padding-top: 15vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   font-weight: bolder;
-  font-size: 160px;
+  font-size: 15vw;
   width: 100vw;
 }
 
@@ -95,9 +95,8 @@ body {
   font-family: 'Helvetica', sans-serif;
   color: black;
   line-height: 1.6;
-
+  font-size: 15px;
   display: none;
-  transition: display 0.5s;
 }
 
 .panel journal {
@@ -108,7 +107,7 @@ body {
 
   /* text */
   font-family: 'Courier New', monospace;
-  font-size: large;
+  /*font-size: 1.75vw;*/
   padding-right: 20vw;
   padding-left: 20vw;
   text-shadow: 0 0 10px 5px white;
@@ -124,19 +123,18 @@ body {
   padding-bottom: 10vh;
   padding-right: 10vw;
   padding-left: 10vw;
-  font-size: 15px;
 }
 
 /* title */
 .panel resume t {
   font-weight: bold;
-  font-size: 35px;
+  font-size: 18px;
 }
 
 /* header */
 .panel resume h {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* caption */
@@ -150,25 +148,23 @@ body {
 }
 
 .panel button {
-  color: inherit;
   font: inherit;
-
   border: none;
-  border-radius: 4px;
+  border-radius: 0.6vw;
   position: relative;
   padding-top: 8px;
   padding-bottom: 6px;
   padding-left: 12px;
   padding-right: 12px;
   bottom: 0%;
-  left: 45%;
+  font-size: x-large;
+  left: 43.4vw;
 }
 
 .panel photo {
   width: 100vw;
   min-height: 60vh;
 }
-
 
 .row:after {
   content: "";
@@ -185,50 +181,8 @@ body {
   padding-top: 100px;
 }
 
-@media (background-image width: 100vw) {
-  nav a {
-    margin-right: 0vw;
-    margin-left: 0vw;
-    margin-top: 0vh;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-    padding-top: 0vh;
-  }
-    footer a {
-    margin-right: 0vw;
-    margin-left: 0vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-bottom: 10vh;
-    color: black;
-    float: bottom;
-  }
-  .panel cover {
-    font-size: smaller;
-    padding-left: 0vw;
-    padding-right: 0vw;
-    padding-top: 0vh;
-    min-height: 0vh;
-    padding-bottom: 4vh;
-    background-image: url(images/graphinthemiddle.jpg);
-    background-size: 80vh;
-  }
-  .panel journal {
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-  }
-  .panel about {
-    min-height: 80vh;
-    font-size: smaller;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-  }
-  .panel london {
-    height: 10vh;
-    font-size: 80px;
+@media only screen and (max-width: 768px) {
+   [class=".panel button"] {
+    left: 20vw;
   }
 }
