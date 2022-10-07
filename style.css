@@ -158,7 +158,8 @@ body {
   padding-right: 12px;
   bottom: 0%;
   font-size: x-large;
-  left: 43.4vw;
+  left: 50vw;
+  transform: translate(-50%,0);
 }
 
 .panel photo {
