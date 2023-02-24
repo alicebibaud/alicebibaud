@@ -6,9 +6,12 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</header>
-	<body>
-		<div class="panel" style="display: block; padding-bottom: 7vh; background-attachment: unset; background-size: unset; width: 100vw; height: 55vh; background-image: url('images/Alice_Graph.jpeg'); padding-top: 40vh;">
-			<div class="links" style="margin-top: 50vh; font-size: 20px;">
+	<body> 
+		<canvas id="canvas" style="display: block;position: relative; width: 100%; height: 100%; z-index: 1000"></canvas>
+		
+		<script src="animation.js"></script>
+		<div class="panel" style="display: block; padding-bottom: 7vh; width: 100vw; background-color: white; padding-top: 0vh; padding-bottom: 10vh">
+			<div class="links" style="font-size: 20px;">
 				<a href="https://www.linkedin.com/in/alice-bibaud-5bb147142/" target="_blank" class="fa fa-linkedin fa-lg">
 				</a>
 				<a href="https://github.com/alicebibaud" target="_blank" class="fa fa-github fa-lg">
@@ -16,15 +19,17 @@
 			</div>
 		</div>
 		<div class="panel" style="display: block;">
-			<resume style="color: white; background-image: url('images/headshot_zoomed.jpg'); font-weight: lighter;">
+			<resume style="color: white; background-image: url('images/headshot_zoomed.jpg'); font-weight: lighter; padding-top: 25vh; padding-bottom: 25vh;">
 				Hello!  
-				<br><br>
+				<br><br><br>
 				I am <b>Alice Bibaud</b>, a junior Computer Science (CS) student at Rensselaer Polytechnic Institute (RPI), concentrating in Theory, Algorithms, and Mathematics.  I am interested in data visualization, open source technologies, signal processing, geometry, and making computing more accessible and practical for all to use.
-				<br><br>					My academic and professional passions run broad and deep, and often add meaning to one another; my goal with this website is to show you some of them.
+				<br><br><br>				My academic and professional passions run broad and deep, and often add meaning to one another; my goal with this website is to show you some of them.
 			</resume>
 		</div>
-		<div class="banner" id="Resume" style="background-image: url(images/work/Resume.png); color: black;">
+		<div class="banner" id="Resume" style="background-color: white; color: black;">
+			<b>
 			<bigTitle><a target="_blank" href="https://docs.google.com/document/d/1bI-4W7LEnT3guTwC_93QCaXudrG3g-7H6O5qTf6b2s4/edit?usp=sharing">Resume</a></bigTitle>
+			</b>
 		</div>
 		<div class="panel" style="display: block;">
 			<resume style="color: white; background-image: url(images/work/bolster.png);">
@@ -40,7 +45,7 @@
 			</resume>
 			<resume style="color: black; background-image: url(images/work/rcos1.jpg); padding-bottom: 0vh;">
 				<t>RCOS - Rensselaer Center for Open Source</t><br>
-				<h>Spring '22 - Coordinator</h><br>
+				<h>Spring '22 - Present - Coordinator</h><br>
 				<c>Responsibilities</c><br>
 				- Determine the overarching direction of RCOS<br>
     			- Plan and present lectures at each meeting<br>
@@ -108,12 +113,7 @@
 				- Maintain a GPA at or above 2.5<br>
 				- Complete a minimum of 5 hours of community service every semester<br>
 				- Attend mandatory <a href="#Panhel">Panhellenic</a> events, including philanthropic activities, member development, community outreach, and recruitment<br>
-				<h>Spring '22 - Director of Ritual</h><br>
-				Many of my responsibilities are secret, due to the long-standing tradition and exclusive nature of the sorority.  However, there are a few things that are either widely publicly known or available to read about on the <a target="_blank" href="https://alphagammadelta.org/">international website</a>, that I cant talk about:<br>
-				- In charge of hosting, directing, and, in some cases, leading, all of the traditional events, carried on through time since our founding in 1904 at Syracuse University<br>
-				- Responsible for upholding, with and for the chapter, the values detailed in <a target="_blank" href="https://alphagammadelta.org/about/">our purpose</a><br>
-				- Supplying, scheduling, and recording mandatory event dates, times, materials, cast, and venue<br>
-				<h>Spring '21 - Director of New Member Experience</h><br>
+				<h>Spring '21 - Present - Director of New Member Experience</h><br>
 				- Make sure New Members are well integrated into the sisterhood and engaged in activities<br>
 				- Assist the VP of New Member experience in teaching new members what it means to be a sister of AGD through weekly lessons<br>
 				- Keep track of new member and member pins<br>
@@ -121,6 +121,7 @@
 			</resume>
 			<resume id="Panhel" style="color: white; background-image: url(images/work/panhel.png);">
 				<t>RPI Panhellenic Association</t><br>
+				<h>Spring '23 - Director of Accredidation</h><br>
 				<h>Spring '22 - Vice President of Internal Affairs (VPIA)</h><br>
 				- Responsible for drafting, streamlining, and updating the Rensselaer Panhellenic Association Bylaws so that they are in accordance with the National Panhellenic Conference Unanimous Agreements, the Rensselaer Student Handbook, and the Statement of Relationship between Rensselaer Polytechnic Institute and Social Fraternities and Sororities at Rensselaer<br>
 				- Acts as co-chair of the Campus Greek Judicial Board<br>
@@ -139,7 +140,9 @@
 				- Collaborated with IBMers to learn standard procedure for porting, git best practices, communicating effectively about the technology, and using the Linux kernel for remote development and testing<br>
 			</resume>
 			<resume style="color: white; background-image: url(images/work/ust4.JPG);">
-				<t>Union Show Techs (UST)</t><c> - formerly UPAC Sound and Lights</c><br>
+				<t>Union Show Techs (UST)</t><br>
+				<h>Fall '22 - Present - Sound Crew Chief</h><br>
+				- 
 				<h>Spring '20 - Present - Technician</h><br>
 				- Set up and take down infastructure for shows and other events held by RPI Union- Funded clubs on campus<br>
 				- Organize, maintain (including testing, building, and replacing), and know the function and proper use of, the organization's supply of audio and lighting equipment<br>
@@ -165,7 +168,7 @@
 				- Assisted students with audio recording concepts and techniques, studio etiquette, navigating Pro Tools, and mixing and mastering music<br>
 				- Teach students how to set up, handle, properly use, and take down studio equipment<br>
 				- Maintain and safeguard all studio equipment<br>
-				- Worked with Ross Rice and on integrating Jack and Jack Trip (two more open source applications by the <a target="_blank" href="https://ccrma.stanford.edu/">CCRMA at Stanford</a>) into the HASS Studio<br>
+				- Worked with Ross Rice on integrating Jack and Jack Trip (two more open source applications by the <a target="_blank" href="https://ccrma.stanford.edu/">CCRMA at Stanford</a>) into the HASS Studio<br>
 				<c>Software</c><br>
 				- ProTools<br>
 				- Logic Pro X<br>
@@ -179,274 +182,25 @@
 				- Programmed, designed, and built an automated Lazy Susan as part of a functional dining table (including  an automated arm, a motorized x-y grid, and an AI-equipped camera), an integral part of a greater environment meant to assist people with spinal cord injury in daily activities<br>
 				- Collaborated with other researchers on algorithms, machine design, and testing<br>
 				<c>Stack</c><br>
-				- Arduino Uno board and language (Modified Java)<br>
+				- Arduino Uno board and language (Java Libraries)<br>
 			</resume>
 			<resume style="color: white; background-image: url(images/work/galileo.png);">
 				<t><a target="_blank" href="https://galileo-camps.com/our-camps/summer-camp-galileo/">Galileo Themed Summer Camps</a></t><br>
 				<h>Summer '19 - Camp Counsellor</h><br>
-				- Led teams of 15 - 20 rising third and fourth-graders in classroom activities, during the summer camp day, and after the camp day had concluded at aftercare<br>
-				- Assisted in teaching introductory mechanical engineering skills (projects included building an automata, clock, and a lockbox with alarm monitoring and armed response)<br>
-				- Taught my team about interpersonal skills (including conflict resolution, effective communication, and giving meaningful feedback)<br>
-				- Taught my team about innovation approaches (Using knowledge, mindset, and processes, including goal identification, idea generation, project design, creation, design testing, evaluation, and redesign)<br>
+				- Led teams of 15 - 20 rising third and fourth-graders in classroom activities, during the day, and after the camp day concluded at aftercare<br>
+				- Assisted in teaching introductory mechanical engineering skills through building projects, including an automata, a clock, and a lockbox with alarm monitoring and armed response)<br>
+				- Taught my team interpersonal skills including conflict resolution, effective communication, and meaningful feedback<br>
+				- Innovated with the campers using knowledge, mindset, and processes, to identify goals, generate ideas, design new projects, create, test designs, evaluate tests, and redesign.<br>
 			</resume>
-		</div>
-		<!--div class="banner" id="Travel" style="background-image: url(images/road_trip/teton_lake.jpeg); font-size: 9vw; text-shadow: 0 0 2px grey;">
-			<bigtitle><a>XC American Road Trip</a></bigtitle>
-		</div>
-		<div class="panel">
-			<journal style="background-image: url(images/road_trip/usa.jpeg);">
-				Sunday, May 15th, 2022
-				<br><br>
-				We packed all of our stuff into Jack's poor car!  We had a bike, two guitars, my audio setup (sans piano), Jack's electronics, a box of stuff I plan to leave at home, a tent, six blankets, a kitchen, a pantry, two gallon's worth of water bottles, my entire wardrobe,...  And we could still (mostly) see out of the side windows.  What a relief!
-				<br><br>
-				We set off on our adventure early-ish.  Our first stop was the Herkimer Diamond Mine, out in (you guessed it) Herkimer, NY.  There, we first started breaking open rocks, with little luck.  Then, we stumbled upon some other fellow miners who told us to look in the gravel for diamonds that had jumped out of exploding rocks; I got to work doing that, and Jack got to pulling rocks out of the side of the pit mine.  We both had a lot of luck doing that, and left with a handful of beautiful rocks!
-				<br><br>
-				Then, we drove through upstate New York into the finger lakes region to Jack's grandparents' house!  We talked about electrical, audio, mechanical, and software engineering over coffee and cookies - Jack's grandfather is an inventor, and a professor of business and electrical engineering.  I'm continually amazed at how cool the people in this family are!  After we said goodbye, we hit the road again - we enjoyed the beautiful upstate farms and mountains, and finally got into Pennsylvania after awhile.  We stayed by lake Eerie in a motel, where I cut Jack's hair (with A LOT of help from him) before we went to sleep.  It turned out surprisingly well!
-			</journal>
-			<journal style="background-image: url(images/road_trip/chicago.jpg);">
-				Monday, May 16th, 2022
-				<br><br>
-				We woke up in Pennsylvania to the sound of some old guys hammering away working on their van.  I wish I could understand what possesed them to do that so early in the morning, but I cannot.  We got on the road pretty early, in pursuit of Chicago!
-				<br><br>
-				First stop: Cleveland!  We pretty much drove right through the middle of it, stopping at a Lake Eerie beach to take a quick walk and pick up some sea glass.  This is a city I'd like to see again - lots of cool music stuff going on here.
-				<br><br>
-				Then, it was off to Chicago!  The driving to get there was horrendous, but I finally managed to find us some affordable parking in the city.  We quickly made our way to millenium park and saw the bean!  Turns out, you can go inside of it!  A mariachi band was playing in there.
-				<br><br>
-				After millenium park, we walked through the heart of the city in pursuit of the riverside sidewalk.  We finally found it, and walked along there until we found a beer that we could drink outside.  Delicious!  We enjoyed the pleasant, cool summer evening air for awhile.   Then, as quickly as we came, we were off again, stopping at a little local grocery store on the way out.
-				<br><br>
-				We drove for five more hours that night, passing into mountain time and landing at a camp site up in Wisconsin.  The good news: we could pay just by putting a cash-filled envelope into a box at the site.  The bad news: we shined our flashlights into the woods around the car, only to see many pairs of eyes glinting back at us.  They looked like deer, but could have been anything.  In our delirium, we decided to ignore the eyes and set up the tent as fast as we could to take refuge in a much needed sleep.
-			</journal>
-			<journal style="background-image: url(images/road_trip/usa.jpeg);">
-				Tuesday, May 17th, 2022
-				<br><br>
-				We woke up late-ish, and had a nice breakfast cooked on the fantastic portable stove we got for the trip.  Jack always woke up a little earlier than me when we were camping - the sun would get him up and out, so he would usually be the one to start on the fire and breakfast.
-				<br><br>
-				Then, we hit the road again - headed South!  We went through Wisconsin and got local cheese curds from a small town gas station.  We ate them up with alarming speed - and they squeaked in protest!  Did you know that cheese curds squeak when you eat them?  We also got all the way through Minnesota and down into South Dakota, where we stopped for the night.
-				<br><br>
-				We ended up stopping in Sioux Falls because it was a little cold to camp.  It's a beautiful town that is known for its history with cigar factories and the rose quartz everything seems to be made up of.  The whole place is pink with it; the roads and sidewalks are a beautiful, glittery rose.  Some of the buildings are even made of it.  All of this, right by a beautiful meandering waterfall, too.  To top it all off, there was loads of art from local artists all over the place.
-				<br><br>
-				Jack and I got a spicy salad and some onion rings at a hoppin bar there, and settled down for the night at a days in.  We watched the local news, full of small-town and rural happenings.  They seem to have a really lovely community out there that we both really enjoyed.  We fell asleep that night dreaming about the beautiful midwest we found ourselves in.
-			</journal>
-			<journal style="background-image: url(images/road_trip/bad_driving.jpg);">
-				Wednesday, May 18th, 2022
-				<br><br>
-				We got free breakfast at our lovely motel - lots of bikers making interesting conversation around us, too.  This was a big deal for us, considering that, so far in the trip, we had subsisted mostly on granola bars and dry ramen.  From Sioux Falls, we headed out into the badlands, which was fantastic!  We hiked around the rocks, getting our first real exercise in several days and hunting for fossils.  Sadly, we didn't find any, even though it's a hot spot for them.
-				<br><br>
-				I got a touch of heat stroke on this adventure, but that was ok.  I rested while Jack drove, which he did for 96% of the ride.  We drove the rest of the day through the wide open praries of South Dakota, dotted with Wall Drug billboards.  We ended up stopped there, only to find that the cafe famous for hawking fice-cent coffee was closed.  I got a tshirt and a shot glass to make up for our dashed hopes.
-				<br><br>
-				We did end up seeing some cool stuff before the end of the day!  We passed by an authentic old prarie house dug out of the side of a hill near badlands, which we explored.  The prarie dogs were really cute, but kind of skittish.  Jack fell in love with them there, among all the old tractors in the pull off by the house.  Then, we kept driving for a bit and - lo and behold - a sign that read "feed the prarie dogs"!  We stopped there, got some bags of peanuts for $1 each, and we out to the prarie dog holes to go make some friends.  We were able to hand feed them, and even give them some pats.  One crawled up my pant leg in pursuit of a peanut!  Needless to say, that was awesome.  We continued towards the Black Hills very happy indeed.
-				<br><br>
-				That night, we looked for camping in the Black Hills.  Only problem with that is that there's no cell service, and it was looking like rain at about 10pm when we started going up by Rapid City.  After catastrophising, stopping by an RV park, and asking for help at a little air bnb, we found an RV camping site that had an opening for the night.  We called Sydney with the extended 1G we had up there, and went to sleep shortly after.  Good good evening.
-			</journal>
-			<journal style="background-image: url(images/road_trip/tower.jpg);">
-				Thursday, May 19th, 2022
-				<br><br>
-				That was our first really cold night - we woke up with ice condensed on the inside of the tent instead of water.  I don't think we changed before leaving that day because we were so frigid.  That was ok though - we were close to Mount Rushmore, so we went there first!  We watched a really informative video, did the trail around the presidents, and wanted to see if we could take a rock with us (you can't).  We didn't want to dawdle too much there, because we had a lot of ground to cover that day.
-				<br><br>
-				As we were coming out of the mountains, we stopped in the Black Hills on the road of an advertized cave.  We were thinking about those Herkimer Diamonds, and wanted to do some more mining.  Lo and behold, we pulled over to the side of the road and found gigantic quartz crystals the length of our fingers, in geodes large enough to sit in!  Jack pulled some more chunks of rock out of the side of the cliff, and we were ecstatic to find all that there.  We left with a grocery bag and they bay of the car filled with rocks.
-				<br><br>
-				Next was the Devil's Tower!  It took us awhile to get there, because the only way to get there from the East is via local highways.  However, once we did get there, we were amazed at the vastness of the monument - she's huge!  We walked on the trail surounding the perimeter below.  It's a sacred site for the natives, so the trees were covered in prayer knots, which I thought was super cool.
-				There's also a giant boulder field below the tower, because when the large crystal columns break off from the side, they crash down onto the ground and create huge, cracked piles of granite.  We climed those piles all the way up to the tree line right below the tower - which was awesome!
-				<br><br>
-				That night, we stayed in Buffalo, Wyoming - a town I had actually been to before.  It's home to a lovely downtown filled with saloons, bed and breakfasts, and steak houses, all of which were a bit more expensive than we were willing to pay.  So, we went to a local grocery store and picked out ingredients for dinner and some camping items - hot dogs, cans of pork and beans, pancake mix, soup.  We cooked ourselves a lovely meal of whatever-we-could-find, and enjoyed our last motel and shower for a very long time.
-			</journal>
-			<journal style="background-image: url(images/road_trip/usa.jpeg);">
-				Friday, May 20th, 2022
-				<br><br>
-				The first part of the day was spent in pursuit of Yellowstone.  We drove up through Cody, Wyoming to get there, where we stopped for supplies at Walmart.  We kept driving, and when we got to the East entrance, we were met with an unwelcome surprise: snow!  That was ok though - it stopped as we drove along the North route to our campsite by the West entrance.  We saw our first buffalo and geysers on that leg of the trip - awesome!
-				<br><br>
-				We finally made it to our campsite, checked in, and explored a little bit.  Saw some more Buffalo, gathered some (dead) wood we found in the forest for a fire, and made our little campsite.  We had a fire, some roasted hot dogs, and a bottle of wine that evening - a meal fit for kings.  It ended up being very, very cold, so we pulled all of the blankets out of the car in an attempt to stay somewhat warm.  Unfortunately, it was so cold that we didn't sleep much.
-			</journal>
-			<journal style="background-image: url(images/road_trip/idyllic_valley.jpg);">
-				Saturday, May 21st, 2022
-				<br><br>
-				After our first night at Yellowstone, we woke up groggy.  Luckily for me, Jack was up a good deal before me, and made a fire, breakfast, and coffee.  After a bit of breakfast, we set out to explore the park!  We went South, and saw most of the big attractions in that sector of park between the West and South entrances.  Our first stop?  The artist's paint pots!  The landscape looked very moon-like.
-				<br><br>
-				Then, we started in the direction of Old Faithful.  Partway there, we decided that we were exhausted, and needed to take a nap.  So we did - right by some beautiful geysers, for two hours.  We got to Old Faithful and meandered around there for awhile, stopping to say hello to some ravens and get a coffee.  We also stopped at the gift shop to stock up on warm things like blankets.  We waited for the great geyser to blow up there, and took a walk around its perimeter.  It was spectacular when it did finally blow up!
-				<br><br>
-				We turned back after that - we wanted to get an early night's sleep.  On the way, we stopped at Biscuit Basin and saw some geysers and steaming ground there.  We collected some firewood, and promptly built a fire with it when we got back to the campsite.  We cooked some more beans over it, had some more wine, and were warmer than we had been in awhile.  Jack figured out that we could make the fire a lot hotter by forcing oxygen in it, which we did at first with a bike pump, and then with a metal tube from my microphone stand.
-				<br><br>
-				That night, we did something different.  We took everything out of the car and put it in the tent.  Then, we set up our sleeping bags in the car.  Hopefully, that would be a little warmer than sleeping in the tent during those 20 degree nights.
-			</journal>
-			<journal style="background-image: url(images/road_trip/artist_point.jpg);">
-				Sunday, May 22st, 2022
-				<br><br>
-				Day two of Yellowstone was much better for many different reasons - we woke up at a proper time, but also after our first good sleep in a long time.  Good breakfast, and then we were on the road!  We started on the rest of our journey that day through the rest of Yellowstone, and it was stunning.
-				<br><br>
-				We left Yellowstone at around noon, which allowed us plenty of time to enjoy driving through the park and hopping onto the very short walking trails.  They've made the lower loop of Yellowstone incredibly accessible to people with limited mobility, which made our trip mostly one of driving, hopping out for a bit, and then continuing.  This was really cool.
-				<br><br>
-				Upon leaving Yellowstone, we entered directly into the Grand Tetons National Park!  It's so beautiful!  We stopped by and hunted for fossils and found a good bunch of em.  Lots of little shells and large strange hairy things - and Jack found an egg!
-				<br><br>
-				We drove through those for hours, and then ended up in Idaho!  We set up camp around 3:00 right past the border at a little state forest campsite that cost $10 a day.  We had a little place to park around some tall bushes at the base of a mountain, and a stream running right behind our site.  It was honestly stunning.
-				<br><br>
-				Jack went on a hike up into the mountains (the first time we had been apart for more than ten minutes in more than a week), I made a friendship bracelet and populated our scrapbook, and started a fire for when Jack came back.  He came back after a few hours and we had a lovely meal with some wine.  Life was very, very good when we went to sleep last night.
-			</journal>
-			<journal style="background-image: url(images/road_trip/tetons.jpeg);">
-				Monday, May 23rd, 2022
-				<br><br>
-				We woke up and had a lovely, leisurely morning; we had porridge and eggs and hot dogs (by which I mean I had porridge and Jack had hot dogs), coffee, and a fire.  We were gathering wood and branches to keep it up, burning the last of what we found at yellowstone.  We even washed our clothes in the river nearby because they smelled so foul.  We changed our clothes for the first time in five days because it was finally warm enough - it was cool to smell slightly less bad.
-				<br><br>
-				Then, we went on a long tromp through the mountains.  We found fossils galore - proper shells!  Also coal seams and lots of burned rock, much like what we found at yellowstone.  Also found a lot of bones.  We were up in those hills far longer than we wanted to be, but we cam back with some cool treasures.
-				<br><br>
-				We went into town to plot out the rest of our route - got some coffee and french fries that ended up tasting like a million dollars because of all the eggs we had been eating.  We figured out that we had a few days to drive a whole lot less than we previously had - Yellowstone camping was the one thing keeping us going fast.  We decided to stay here one more night instead of continuing onwards, because the campground we were staying at was so lovely.
-				<br><br>
-				We had another fire, another lovely fire-cooked meal, and another bottle of wine.  This time, Jack showed me how to play a little guitar - maybe this summer I'll learn something about how to do it.  We slept in the car again, honestly a huge move that I'd recommend.
-			</journal>
-			<journal style="background-image: url(images/road_trip/psw.jpeg);">
-				Tuesday, May 24th, 2022
-				<br><br>
-				We woke up early-ish this day to drive South in pursuit of warmer weather and lower latitudes - and the Great Salt Lake.  When we got to the actual lake, we parked on a pier built upon a foundatin of slag from iron-rich coal.  It was a desolate place.  We went into the museum / visitor center, and the signs on the wall talked about the history of salt mining there, the sulfuric scent of the place, and brine shrimp, the only life the lake supports.  We walked around the flats a bit and moved on, though we weren’t done with the lake yet; we drove alongside salt flats for hundreds of miles.  We saw lots of salt mines and factories, which caused me to ran out of the car and licked the ground to test to see what it was.  It was, in fact, salt.
-				<br><br>
-				We got to Nevada after not too long a time, and it was just as desolate as Salt Lake.  We drove through hundreds and hundreds of miles of high desert.  We passed a few canyons, where we hunted for fossils (and found some)!
-				<br><br>
-				We landed in a little town with a bunch of little casinos and a lovely family-owned motel we were able to stay at for far cheaper than anywhere else.  We got some more fries at a local restaurant, which again tasted amazing next to the camping food we had been eating.
-			</journal>
-			<journal style="background-image: url(images/road_trip/pcg.jpg);">
-				Wednesday, May 25th, 2022
-				<br><br>
-				We set out on our last full day of driving.  It took the whole day of driving through the same kind of desert.  We passed by some ghost towns and abandoned mines.  We found Aragonite, a very ghostly town made up of an outhouse and some old car parts, built to mine a beautiful white mineral of the same name.  
-				<br><br>
-				We kept going and found some gold and copper mines.  The gold mines were very well protected, so we couldn’t get close enough to look at the yellow rock.  However, we were far and away close enough to find some copper in the ground.  We found a bunch of old claims, covered with ancient wooden boxes, with copper ore scattered all around.  This was so cool to find!
-				<br><br>
-				We landed at a campground by Truckee that was supposed to be $22 / day.  We, without any cash, dropped a $20 bill in the bin and called it a day.  Luckily we didn’t have any problems.  We settled down and unpacked a little bit to stake our claim, and then we were off to downtown Truckee in hot pursuit of beer.  Luckily for us, we found some at Jax Diner!
-				<br><br>
-				We stopped by a convenience store for a celebratory bottle of wine and some marshmallows before getting back to camp.  Once there, built a fire of pinecones and consumed the rest of the hot dogs, a bunch of marshmallows, and the best $4 bottle of wine ever sold.  We washed the dishes in the stream before going to sleep one last time in the woods.
-			</journal>
-			<journal style="background-image: url(images/road_trip/psw.jpeg);">
-				Thursday, May 26th, 2022
-				<br><br>
-				We realized we were only about three hours away from Los home when we woke up.  Not wanting to rush my family, Jack and I went hunting for some cool rocks on the route home.  We were led to a stream without any nearby roads that was full of garnets, jade, and “rock crystal”, whatever that could possibly be.  Because there were no nearby roads, we had to improvise; we drove until we found an outcropping of rock that looked promising, and started looking around.  Sure enough - beautiful, green chunks of jade!
-				<br><br>
-				I got a little dizzy from the altitude, heat, and lack of water, so we got moving after a bit.  We stopped at rest spots to get water, and ate some granola bars to beat the heat.  We also got some $6 gas.  That wasn’t terribly fun.
-				<br><br>
-				We got home at about dinner time, after 3858 miles of driving across America.  What an incredible adventure it was!
-			</journal>
-		</div>
-		<div class="banner" style="background-image: url(images/journal/union_jack.png); text-shadow: 0 0 2px navy; ">
-			<bigtitle><a>London</a></bigtitle>
-		</div>
-		<div class="panel">
-			<journal style="background-image: url(images/journal/journal1.jpg);">
-				Sunday, March 5th, 2022 
-				<br><br>
-				Today, I hopped on several planes - the first to Washington DC, the next to London Heathrow Airport.  The travel was pleasant; I wrote in my journal and did a bit of reading whilst waiting before departing, and slept through the trans-Atlantic flight.  which was quite pleasant, and landed in London Heathrow Airport without a hitch.  
-				<br><br>
-				Caught the Paddington line and met Erica at the beautiful train station there; we walked to her flat together through the misty afternoon.  Once there, we had lunch with an assortment of her friends from King's.  We got to talking about politics, because that's what they all study - it was enlightening to hear their perspectives, particularly because each person had their own depth of knowledge in different areas.
-				<br><br>
-				That was pretty much the day - getting acquainted with the friends, the flat, and the timezone.  I took a fat nap, Erica made a bangin salad, and we went to sleep early.
-			</journal>
-			<journal style="background-image: url(images/journal/journal2.jpg);">
-				Monday, March 6th, 2022 
-				<br><br>
-				Erica and I both woke up at 8:00am.  We got ready, had some coffee (at home, then at a cafe, then later on, at another cafe...), and we were off to King's College campus!  We traveled via the bus - you know, a red double decker one.  Normally people keep to themselves on London transport, but a Serbian lady came over to us and started babbling about this and that.  She also told me that I was an American student studying Computer Science, and that I had never been on one of these buses before...
-				<br><br>
-				We landed at King's, and I explored the Strand while Erica went to class.  First, I went to Pret just for the wifi; student life is like that.  Then, meandered down the road to Waterstones, the British answer to Barnes & Noble.  Peeked through all the books, then did some homework in the cafe upstairs.
-				<br><br>
-				The real magic of the day was revealed in the National Gallery.  Wandering through the halls, I got to read <i>~ everything ~</i> and fully sink into each work the way I've always wanted to in an art museum.
-				<br><br>
-				Some highlights: many renaissance painters liked to play with perspective, so you really had to walk all the way around many pieces to get the full effect.
-				<br><br>
-				Also - Turner!  The impressionist painter might be my favorite now.  Didn't know you could add so much detail and yet keep the effect so soft and subtle.
-				<br><br>
-				Lastly: Van Gogh.  Beautiful, beautiful works of his are featured in the gallery, many of which he completed while he was institutionalized.  I've garnered a deeper appreciation for his work, especially regarding the textures of the plants he created.  They're practically relief scupltures, in how thick he laid the paint down.
-				<br><br>
-				Got to another cafe (on a bridge???), did some work there, and eventually met up with Erica.  We worked together there for quite some time, until we (exhaustedly) trundled back to her flat, again via the bus.  This was a freezing day - think that took a lot of energy out of us.  We made some ramen, watched a bit of a documentary, and had another early night.
-			</journal>
-			<journal style="background-image: url(images/journal/journal4.jpg);">
-				Tuesday, March 7th, 2022
-				<br><br>
-				Got a slightly later start today - Erica didn't have class until later, so we got to King's at 12.  I popped a squat at Pret and did some work, then met her and Hugo at a lovely little cafe in their quad (all beautiful marble 19th century style buildings).  We had lunch together, chatted for awhile, then went off on a walk to enjoy the unreasonably beautiful sunny weather and explore the historic campus.  We spent an hour or two just looking for sunny green spots to sit in; very pleasant.
-				<br><br>
-				Then, Hugo went to class, so Erica and I went to find some of her groupmates.  They've been working on an incredibly interesting policy project for awhile, which they are to present at a contest hosted by the BBC and judged by the former Australian prime minister!
-				<br><br>
-				From there, Erica and I went to Chinatown to go dinner - we ended up getting some delicious dim sum style buns, which we ravenously ate as we meandered through the neightborhood.  We also got some candy; we were headed to see the new Batman movie with her two roommates.  Luckily, we made it to the theatre on time, and all had a blast watching the film.  DC did a wonderful - or should I say <i>marvelous</i> - job with this movie.  Please watch it if you can!
-			</journal>
-			<journal style="background-image: url(images/journal/journal6.jpg);">
-				Wedesday, March 8th, 2022
-				<br><br>
-				Batman was a three hour long extravaganza, so I didn't get to sleep for awhile - which means I woke up pretty late as well.  That's what I get for going out, I suppose.  That morning, I got myself together, made up the room I'm staying in, and got ready to go out and explore London!
-				<br><br>
-				First, I went to see the Sherlock Holmes Museum at 221B Baker Street.  It took me awhile to walk there from Erica's flat, because I took the route that walks along the canal and Regent's Park.  Once I arrived though, I was astouned.  The concept of a museum for a fictional story is odd, and I was stuck by that doubly when I got there.. but it makes sense here.  It documents not only the story line of the Sherlock Holmes series, but also the Victorian era itself, the cultural impact the franchise had, and sets up some of the rooms that Holmes and Dr. Watson often spent time in.  It was a very lovely time.  Again, there was a lot to read here too, which I enjoyed immensely.
-				<br><br>
-				Next, I walked through Picadilly Circus in pursuit of lunch.  It was some incredible people watching - felt very Times Square, but better.  There were a lot of shops with art in the windows, and people speaking different languages; even though I was just passing through, that was an experience I'll remember in its own right.
-				<br><br>
-				Then - lunch!  I found a cute little spot in Soho that sold bangers and mash and sticky toffee pudding, so I just had to go.  The food was delicious, and it was very pleasant to eat a meal at a dining establishment on my own.  Think that's a first for me.
-				<br><br>
-				I left very full, in pursuit of Portnum and Mason, a very fancy gift store.  They originally got famous for their teas, but now they're like.  If Tiffany's made tea and everything that goes with tea - beautiful biscuit tins, chocolates, wine, china, tea accessories.  It's an emporium of British Posh-ness decked out in baby blue and gold.  It was hard to not buy everything there because it all looked so good, but I managed.  From there, hopped on the bus back to the flat and took a nap.
-				<br><br>
-				I awoke and left the flat yet again to meet Erica at her local tube station; she, I, and a few of her friends were slated to be a team in a pub quiz.  We got dead last in the competition, but we had a great time trying to figure out questions that were far above our pay grade and getting too excited when we knew the answers.  Erica and I meandered back to the flat after talking to one of the girls for awhile outside the pub.  Maybe these are friends we'll keep!
-			</journal>
-			<journal style="background-image: url(images/journal/journal3.jpg);">
-				Thursday, March 9th, 2022
-				<br><br>
-				Once Erica and I finally got up and at em, she went to class, and I went looking for a place to study.  I ended up traversing Little Venice in search of a cafe to bust out some differential equations homework at, and came upon a lovely French coffee spot in a houseboat!  There was no wifi, so all I could do was math and journal.  These are good things.
-				<br><br>
-				After awhile (and I mean AWHILE), I found my way back to Erica's flat and started doing some work on this here website.  It's been coming along - we're making progress for sure, though there's still a long way to go.  Erica and Hugo came back home around 6:00, and I just kept working until some of their political science friends came around.  We had a dinner party of sorts: a combination conversation, board game, and philisophical salon.  These are the nerdy friends, with whom my dear friend likes to party hard and yell about things with.  Some topics discussed into the wee hours, among others, were:
-				<blockquote>
-				How Artificial Intelligence / Machine Learning will never exceed what humans can either quantify or learn themselves because they aren't, and won't ever be, cabable of abstract thought;
-				</blockquote><blockquote>
-				A comparison of the imperial and metric systems, and why England uses both for some reason, which led into:
-				</blockquote><blockquote>
-				How much the Gregorian Calendar sucks.  As a result of this, we made a new calendar system based entirely on the solar calendar (solstices, equinoxes, and the four midpoints between) to divide the year into eight long months that coincide exactly with the seasons (and vary to compensate for differences).  Oh, and no leap years: the days are calculated such that the extra time gets spread out through the whole year;
-				</blockquote><blockquote>
-				The relationship between testosterone, estrogen, and agression;
-				</blockquote><blockquote>
-				All of the other things you'd expect of highly educated people studying the humanities - The Repulbic, socialism, modern "leftism", some cool and funky physics videos, social clout, Luxemborge, Determinism, Geometry (of course), and generally making fun of the French.
-				</blockquote>
-				Needless to say, we had a lovely time together; the group of people who don't live with Erica didn't evacuate the flat until 3:30am.  This is exactly what I thought I would find here, and am so happy to have been able to listen to such cool humans talk for awhile.
-			</journal>
-			<journal style="background-image: url(images/journal/journal7.jpg);">
-				Friday, March 10th, 2022
-				<br><br>
-				On Friday, I woke up at 8am, somehow rested after our wild and wacky evening.  I cleaned up a little bit and worked on this website quite lot, until about noon.  When Erica and I rallied, it was 1 or 2pm, and we were both in dire need of caffiene.  We stopped to grab some on the way to King's college.  I stopped at Cafe Nero on Waterloo Bridge again - this was to be my first stop on my way to the Tate Modern, where I intended to spend the rest of my day.
-				<br><br>
-				I took my time crossing the bridge and getting there; South Bank is lovely!  Though once I got there, it was another situation of reading everything in sight and just getting SO absorbed by the art.  Some of my favorites were as follows:
-				<br><br>
-				Some absolutely delightful sculptures by Phyllida Barlow.  Her work was somehow so emotionally evocative that I found myself laughing aloud at... literally a clothes drying rack covered in a happy yellow jackson pollock-like coat of paint.  It did manage to capture movement and a geographic type of feeling that I had never seen before.
-				<br><br>
-				I was also amazed at the work from artists in the Gutai Art Association.  Gutai means the physical embodiment of an idea; for them, actions and materials were equally important in their work.  They did some crazy stuff like paint with their feet and throw stuff at canvases; also lots of cool dancing, and work made out of household objects.
-				<br><br>
-				I also saw some work I had studied before; we're got The Fountain, pictured above, which is literally just a urinal with "R. Mutt 1917" painted on it.  It started a whole artistic movement within the absurdist school of thought called Dadism.
-				<br><br>
-				Also "Whaam!", by Roy Lichtenstein.  I had to paint this upside-down and backwards as part of a study I did at art camp.  All of Lichtenstein's work is popular (the whole genre being called "pop"), but he truly did some cool stuff for comics in the future.
-				<br><br>
-				I got a bit lost coming back from there, but that's ok; Erica was in an important meeting that ran late anyway, so I didn't feel too bad.  I even got a bit of time to work on this website in Nero once again!  I reall am enjoying this, I must say.
-				<br><br>
-				From there, we walked to Soho to go out and grab some dinner.  We went to a lovely Thai place called Rosa's - we got some really fun drinks and talked deep into the night, even long after we left the restaurant.  I was reminded why Erica is one of my favorite people in the world: she thinks about everything and has a good time even so.
-			</journal>
-			<journal style="background-image: url(images/journal/journal5.jpg);">
-				Saturday, March 11th, 2022
-				<br><br>
-				We woke up relatively early today, another beautiful and sunny day!  Erica was to do work with her group mates at 12:30, but we live pretty close and had time, so we meandered down to Portabello Market.  It's such a hustling, bustling place, and there are people from all over the world selling their wares there.  We stopped by a lady selling vintage silk products, and Erica got this incredible blue gown for a ball coming up!  She couldn't stay long after that, so I spent a peaceful afternoon browsing the shops.  Got some handmade gifts for friends and family that I'm pretty excited about!
-				<br><br>
-				Got lost on the way back again, but I needed the walk.  It was a beautiful day - maybe I got a little bit of vitamin D.  Got back to the flat, did some work, did an interview coding assesment, worked through some documents. It was a very productive afternoon.
-				<br><br>
-				We ended the evening by having some dinner with our friends (Erica's groupmates, whom I had gotten to know pretty well by that point) at the flat, and then going to a costume birthday party!  She went as Juliette, from Baz Luhrmann's interpretation of Romeo and Juliet.  Me?.. I went as Dwayne "The Rock" Johnson.
-				<br><br>
-				It was a really cool party, populated by students from all over the world.  Most of them were French, with some wild stories - I met a dude who had worked in San Jose, and had recently created a house devoted to house parties; I met the daughter of a world famous jockey, going to school and currently working as an equine breeder.  Exactly what you would expect a party in a wealthy french house to look like - very, very cool, and very, very unfamiliar to me.  After I napped on a couch for a bit, we went home at like 1:00am.  We immediately put some mac and cheese on the stove, ate it in silence, and went to bed.  That definitely felt like high school.
-			</journal>
-			<journal style="background-image: url(images/journal/journal8.jpg);">
-				Sunday, March 12th, 2022
-				<br><br>
-				Woke up at 6:00am to get ready and go back to school.  Ate some breakfast, showered, stripped my bed, did some dishes, wrote some notes, and walked out of the flat.  Stopped at a convenience store to grab some last-minute postcards; guess I should post them soon.
-				<br><br>
-				I loved London with all of my heart, and will miss her dearly.  I would highly recommend visiting, and would even more so recommend seeing it through the eyes of a dear friend and a local.  I'm incredibly blessed to have had the opportunity to visit when I did, and wish Erica and her beautiful city the best.
-				<br><br>
-				FIN.
-			</journal>
-		</div>
-		<--div class="banner" id="Music" style="background-image: url(images/music/music.jpg); color: black;">
-			<bigTitle>Music</bigTitle>
-		</div>
 		<div class="panel" style="background-image: url(images/music/group_photo.png); color: white;">
 			<bigTitle style="font-size: 120px;"><a target="_blank" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj5m_qq-KD3AhVhTt8KHfuECPsQFnoECBMQAQ&url=https%3A%2F%2Fopen.spotify.com%2Fartist%2F1PAxgur6kMwfTYQjczTED2&usg=AOvVaw2GOSgZwcDvJGspfvxlJb_M">
 				SUBURBAMORE</a></bigTitle>
-		</div-->
-		<div class="panel" style="display: block; min-height: 0vh; padding-top: 10vh; padding-bottom: 10vh;">
-			<button style="background-color: #04AA6D; margin-bottom: 5vh;">
-  				<a style="color: white; text-decoration: none;" href='mailto:alice.bibaud@gmail.com?subject=Emailed From Website'>Contact Me</a>
+		</div>
+		<div class="panel" style="display: block; height: 20vh; padding-top: 10vh; padding-bottom: 10vh;">
+			<button style="background-color: #0000; margin-bottom: 5vh;">
+  				<a style="color: black; font-weight: normal; text-decoration: none;" href='mailto:alice.bibaud@gmail.com?subject=Emailed From Website'>Contact Me</a>
   			</button>
-			<div class="links" style="min-height: 0vh; padding-bottom: 0vh; padding-top: 2vh; background-color: white; font-size: 20px;">
+			<div class="links" style="height: 0vh; padding-bottom: 0vh; padding-top: 2vh; background-color: white; font-size: 20px;">
 				<a href="https://www.linkedin.com/in/alice-bibaud-5bb147142/" class="fa fa-linkedin fa-lg">
 				</a>
 				<a href="https://github.com/alicebibaud" class="fa fa-github fa-lg">
