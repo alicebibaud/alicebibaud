@@ -1,6 +1,5 @@
 html {
   font-family: 'Helvetica', sans-serif;
-  height: 100%;
   width: 100%;
   scroll-behavior: smooth;
 }
@@ -11,71 +10,39 @@ body {
   margin-bottom: 0px;
   margin-left: 0px;
   font-size: 20px;
+  height: 7000px;
+  background-color: white;
 }
 
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 
-.links {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
+.center a {
   color: black;
-}
-
-.links a {
-  margin-right: 5vh;
-  color: black;
-  margin-left: 5vh;
+  text-decoration: none;
   float: bottom;
-}
-
-.links a: hover {
-  transition-duration: 1s;
-  color: blue;
 }
 
 .banner {
   min-width: 50vw;
-  background-color: white;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 
   /* text */
-  color: white;
   text-align: center;
+  text-decoration: none;
   padding-top: 10vh;
   padding-bottom: 10vh;
   font-weight: bolder;
   font-size: 15vw;
   width: 100vw;
-}
-
-.banner b: hover {
-  transition-duration: 1s;
-  background-color: #232323;
-}
-
-.active, .collapsible:hover {
-}
-
-/* links in banners */
-.banner bigTitle a {
-  all: inherit;
-  color: inherit;
+  border-width: 2px;
 }
 
 .panel {
   /* the panel itself */
   min-width: 50vw;
-  background-color: white;
 
   /* Create the parallax scrolling effect + scaling */
   background-position: center;
@@ -95,11 +62,15 @@ body {
   all: inherit;
 
   /* text */
+  margin-left: 5vw; margin-right: 5vw;
+  margin-top: 5vh; margin-bottom: 5vh;
+  border-radius: 7px;
   background-repeat: repeat;
   padding-top: 10vh;
   padding-bottom: 10vh;
   padding-right: 10vw;
   padding-left: 10vw;
+  box-shadow: 0px 0px 15px grey;
 }
 
 /* title */
@@ -124,24 +95,20 @@ body {
   color: inherit;
 }
 
-.panel button {
-  font: inherit;
-  border: none;
-  border-radius: 0.6vw;
-  position: relative;
-  padding-top: 8px;
-  padding-bottom: 6px;
-  padding-left: 12px;
-  padding-right: 12px;
-  bottom: 0%;
-  font-size: x-large;
-  left: 50vw;
-  transform: translate(-50%,0);
-}
 
 .panel photo {
   width: 100vw;
   min-height: 60vh;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.column a {
+  color: black;
+  float: bottom;
 }
 
 .row:after {
@@ -157,6 +124,7 @@ body {
   padding-left: 100px;
   padding-bottom: 100px;
   padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 @media only screen and (max-width: 768px) {
