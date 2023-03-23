@@ -55,22 +55,24 @@ body {
   line-height: 1.6;
   font-size: 20px;
   font-weight: lighter;
-  display: none;
 }
 
 .panel resume {
   all: inherit;
 
-  /* text */
+  /* source */
   margin-left: 5vw; margin-right: 5vw;
   margin-top: 5vh; margin-bottom: 5vh;
-  border-radius: 7px;
-  background-repeat: repeat;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  padding-right: 10vw;
-  padding-left: 10vw;
+  padding-top: 10vh; padding-bottom: 10vh;
+  padding-right: 10vw; padding-left: 10vw;
+
+  background-color: #000000ff;
+  background-image: url(images/work/bolster_light.jpeg);
+
   box-shadow: 0px 0px 15px grey;
+  border-radius: 7px;
+
+  background-repeat: repeat;
 }
 
 /* title */
