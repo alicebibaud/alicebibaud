@@ -10,12 +10,12 @@ body {
   margin-bottom: 0px;
   margin-left: 0px;
   font-size: 20px;
-  height: 7000px;
-  background-color: white;
 }
 
 .center {
   display: block;
+  width: 50%;
+  font-size: 25px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -27,26 +27,34 @@ body {
 }
 
 .banner {
-  min-width: 50vw;
-
   /* text */
   text-align: center;
-  text-decoration: none;
   padding-top: 10vh;
   padding-bottom: 10vh;
   font-weight: bolder;
   font-size: 15vw;
   width: 100vw;
-  border-width: 2px;
+}
+
+.banner a {
+  /* text */
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .panel {
-  /* the panel itself */
-  min-width: 50vw;
+  /* panel effects */
+  margin-left: 5vw; margin-right: 5vw;
+  margin-top: 5vh; margin-bottom: 5vh;
+  padding-top: 10vh; padding-bottom: 10vh;
+  padding-right: 10vw; padding-left: 10vw;
+  box-shadow: 0px 0px 15px grey;
+  border-radius: 7px;
 
   /* Create the parallax scrolling effect + scaling */
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
 
@@ -57,46 +65,27 @@ body {
   font-weight: lighter;
 }
 
-.panel resume {
-  all: inherit;
-
-  /* source */
-  margin-left: 5vw; margin-right: 5vw;
-  margin-top: 5vh; margin-bottom: 5vh;
-  padding-top: 10vh; padding-bottom: 10vh;
-  padding-right: 10vw; padding-left: 10vw;
-
-  background-color: #000000ff;
-  background-image: url(images/work/bolster_light.jpeg);
-
-  box-shadow: 0px 0px 15px grey;
-  border-radius: 7px;
-
-  background-repeat: repeat;
-}
-
 /* title */
-.panel resume t {
+.panel t {
   font-weight: bold;
   font-size: 24px;
 }
 
 /* header */
-.panel resume h {
+.panel h {
   font-weight: bold;
   font-size: 22px;
 }
 
 /* caption */
-.panel resume c {
+.panel c {
   font-weight: bold;
 }
 
 /* link */
-.panel resume a {
+.panel a {
   color: inherit;
 }
-
 
 .panel photo {
   width: 100vw;
@@ -111,6 +100,10 @@ body {
 .column a {
   color: black;
   float: bottom;
+}
+
+.row {
+  padding-left: 15vw;
 }
 
 .row:after {
