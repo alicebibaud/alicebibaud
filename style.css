@@ -1,6 +1,5 @@
 html {
   font-family: 'Helvetica', sans-serif;
-  width: 100%;
   scroll-behavior: smooth;
 }
 
@@ -11,6 +10,7 @@ body {
   margin-left: 0px;
   font-size: 20px;
 }
+
 
 .center {
   display: block;
@@ -24,10 +24,14 @@ body {
   color: black;
   text-decoration: none;
   float: bottom;
+  transition: 0.3s;
+}
+
+.center a:hover {
+  color: #b50000;
 }
 
 .banner {
-  /* text */
   text-align: center;
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -37,18 +41,23 @@ body {
 }
 
 .banner a {
-  /* text */
   color: black;
   text-decoration: none;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.banner a:hover {
+  color: #b50000;
 }
 
 .panel {
   /* panel effects */
   margin-left: 5vw; margin-right: 5vw;
   margin-top: 5vh; margin-bottom: 5vh;
-  padding-top: 10vh; padding-bottom: 10vh;
-  padding-right: 10vw; padding-left: 10vw;
+  display: flex;
+
+  /* make it POP */
   box-shadow: 0px 0px 15px grey;
   border-radius: 7px;
 
@@ -58,40 +67,60 @@ body {
   background-attachment: fixed;
   background-size: cover;
 
+  /* add the overlay */
+  position: relative;
+  z-index: 1;
+}
+
+.panel overlay {
+  /* overlay effects */
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding-top: 10vh; padding-bottom: 10vh;
+  padding-right: 10vw; padding-left: 10vw;
+  display: table-cell;
+
   /* text */
   color: black;
   line-height: 1.6;
   font-size: 20px;
   font-weight: lighter;
+
+  /* make it POP */
+  border-radius: 7px;
+  transition: 0.4s;
+}
+
+.panel overlay:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 0px 10px grey;
 }
 
 /* title */
-.panel t {
+.panel overlay t {
   font-weight: bold;
   font-size: 24px;
 }
 
 /* header */
-.panel h {
+.panel overlay h {
   font-weight: bold;
   font-size: 22px;
 }
 
 /* caption */
-.panel c {
+.panel overlay c {
   font-weight: bold;
 }
 
 /* link */
-.panel a {
+.panel overlay a {
   color: inherit;
 }
 
-.panel photo {
-  width: 100vw;
-  min-height: 60vh;
-}
 
+/* 2 columns */
 .column {
   float: left;
   width: 50%;
