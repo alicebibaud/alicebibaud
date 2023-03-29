@@ -1,6 +1,5 @@
 html {
   font-family: 'Helvetica', sans-serif;
-  width: 100%;
   scroll-behavior: smooth;
 }
 
@@ -10,12 +9,13 @@ body {
   margin-bottom: 0px;
   margin-left: 0px;
   font-size: 20px;
-  height: 7000px;
-  background-color: white;
 }
+
 
 .center {
   display: block;
+  width: 50%;
+  font-size: 25px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -24,83 +24,103 @@ body {
   color: black;
   text-decoration: none;
   float: bottom;
+  transition: 0.3s;
+}
+
+.center a:hover {
+  color: #b50000;
 }
 
 .banner {
-  min-width: 50vw;
-
-  /* text */
   text-align: center;
-  text-decoration: none;
   padding-top: 10vh;
   padding-bottom: 10vh;
   font-weight: bolder;
   font-size: 15vw;
   width: 100vw;
-  border-width: 2px;
+}
+
+.banner a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.banner a:hover {
+  color: #b50000;
 }
 
 .panel {
-  /* the panel itself */
-  min-width: 50vw;
+  /* panel effects */
+  margin-left: 5vw; margin-right: 5vw;
+  margin-top: 5vh; margin-bottom: 5vh;
+  display: flex;
+
+  /* make it POP */
+  box-shadow: 0px 0px 15px grey;
+  border-radius: 7px;
 
   /* Create the parallax scrolling effect + scaling */
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
+
+  /* add the overlay */
+  position: relative;
+  z-index: 1;
+}
+
+.panel overlay {
+  /* overlay effects */
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding-top: 10vh; padding-bottom: 10vh;
+  padding-right: 10vw; padding-left: 10vw;
+  display: table-cell;
 
   /* text */
   color: black;
   line-height: 1.6;
   font-size: 20px;
   font-weight: lighter;
-  display: none;
+
+  /* make it POP */
+  border-radius: 7px;
+  transition: 0.4s;
 }
 
-.panel resume {
-  all: inherit;
-
-  /* text */
-  margin-left: 5vw; margin-right: 5vw;
-  margin-top: 5vh; margin-bottom: 5vh;
-  border-radius: 7px;
-  background-repeat: repeat;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  padding-right: 10vw;
-  padding-left: 10vw;
-  box-shadow: 0px 0px 15px grey;
+.panel overlay:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 0px 10px grey;
 }
 
 /* title */
-.panel resume t {
+.panel overlay t {
   font-weight: bold;
   font-size: 24px;
 }
 
 /* header */
-.panel resume h {
+.panel overlay h {
   font-weight: bold;
   font-size: 22px;
 }
 
 /* caption */
-.panel resume c {
+.panel overlay c {
   font-weight: bold;
 }
 
 /* link */
-.panel resume a {
+.panel overlay a {
   color: inherit;
 }
 
 
-.panel photo {
-  width: 100vw;
-  min-height: 60vh;
-}
-
+/* 2 columns */
 .column {
   float: left;
   width: 50%;
@@ -109,6 +129,10 @@ body {
 .column a {
   color: black;
   float: bottom;
+}
+
+.row {
+  padding-left: 15vw;
 }
 
 .row:after {
