@@ -132,18 +132,44 @@ body {
 }
 
 /* 2 columns */
-.column {
+.column2 {
   float: left;
   width: 50%;
 }
 
-.column a {
+.column2 a {
   color: black;
   float: bottom;
 }
 
-.row {
-  padding-left: 15vw;
+/* 3 columns */
+.column3 {
+  float: left;
+  width: 33%;
+}
+
+.column3 img {
+  color: black;
+  float: bottom;
+  margin-left: 2vw; margin-right: 2vw;
+  width: 90%;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+
+#house:hover {
+  background-color: rgba(126, 211, 237, 0.4);
+  box-shadow: 0px 0px 15px grey;
+}
+
+#psoft:hover {
+  background-color: rgba(132, 204, 110, 0.4);
+  box-shadow: 0px 0px 15px grey;
+}
+
+#h2w:hover {
+  background-color: rgba(220, 169, 245, 0.4);
+  box-shadow: 0px 0px 15px grey;
 }
 
 .row:after {

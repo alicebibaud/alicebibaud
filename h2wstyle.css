@@ -1,0 +1,47 @@
+html {
+  font-family: 'Helvetica', sans-serif;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  height: auto;
+  background: linear-gradient(#ffffff 0%, #ffffff 30%, #aaaaaa 100%);
+}
+
+.center {
+  background: rgba(0, 0, 0, 0);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center a {
+  font-size: 40px;
+  color: black;
+  text-decoration: none;
+  float: bottom;
+}
+
+.panel {
+}
+
+.panel img {
+   /* box effect */
+  margin-left: 5vw; margin-right: 5vw;
+  margin-top: 5vh; margin-bottom: 5vh;
+  box-shadow: 0px 0px 15px grey;
+  border-radius: 7px;
+  width: 90%; 
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+   [class=".panel button"] {
+    left: 20vw;
+  }
+}

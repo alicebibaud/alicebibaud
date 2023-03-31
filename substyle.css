@@ -1,0 +1,133 @@
+html {
+  font-family: 'Helvetica', sans-serif;
+  font-size: x-large;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: auto;
+  background: linear-gradient(#ffffff 0%, #99ccff 30%, #ffff99 60%, #ffcc99 70%, #ffffff 90%);
+}
+
+.links {
+  margin: 0vh, 0vw, 0vh, 0vw;
+	position: absolute;
+  color: black;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.links a {
+  margin-right: 5vh;
+  color: black;
+  margin-left: 5vh;
+  float: bottom;
+}
+
+.links a: hover {
+  transition-duration: 1s;
+  background-color: #232323;
+}
+
+.banner {
+  background-color: rgba(0, 0, 0, 0);
+
+  /* text */
+  color: white;
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  font-weight: bolder;
+  font-size: 160px;
+  width: 100vw;
+}
+
+/* links in banners */
+.banner a {
+  all: inherit;
+  color: inherit;
+}
+
+.banner a:hover {
+  opacity: 0.8;
+}
+
+/* The grid: Five equal columns that float next to each other */
+.bandColumn {
+  float: left;
+  width: 20%;
+}
+
+/* Style the images inside the grid */
+.bandColumn img {
+  opacity: 0.8;
+  height: 20vh;
+}
+
+.bandColumn img:hover {
+  opacity: 1;
+}
+
+/* The grid: Five equal columns that float next to each other */
+.albumColumn {
+  margin: auto;
+  width: 80%;
+}
+
+/* Style the images inside the grid */
+.albumColumn img {
+  opacity: 0.8;
+  width: 80vw;
+  padding-right: 10vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.albumColumn img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.container div {
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 20vh;
+  font-size: 26px;
+  line-height: 1cm;
+}
+
+.container iframe {
+  margin: auto;
+  width: 80%;
+  margin-left: 10vw;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+} 
+
+@media () {
+}
