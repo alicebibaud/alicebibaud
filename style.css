@@ -72,6 +72,25 @@ body {
   z-index: 1;
 }
 
+.h2wpanel {
+}
+
+.h2wpanel img {
+   /* box effect */
+  margin-left: 5vw; margin-right: 5vw;
+  margin-top: 5vh; margin-bottom: 5vh;
+  width: 90%;
+
+  box-shadow: 0px 0px 15px grey;
+  border-radius: 7px;
+
+  transition: 0.2s;
+}
+
+.h2wpanel img:hover {
+  box-shadow: 0px 0px 15px black;
+}
+
 .panel overlay {
   /* overlay effects */
   position: relative;
@@ -118,6 +137,7 @@ body {
 .panel overlay a {
   color: inherit;
 }
+
 
 #about {
   padding-top: 25vh; 
@@ -177,7 +197,6 @@ body {
   display: table;
   clear: both;
 }
-
 
 
 @media only screen and (max-width: 768px) {
