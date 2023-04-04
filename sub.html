@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<header>
+		<title>Suburbamore</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</header>
+	<body>
+		<div style="background-color: rgba(0, 0, 0, 0); padding: 20vh"></div>
+		<div class="banner" id="title" style="position: 40vh; font-size: 8vw;">
+			SUBURBAMORE
+		</div>
+		<div class="banner" style="font-size: 8vw; margin-top: 50vh;">
+			THE BAND
+		</div>
+		<div class="row" style="margin-left: 3vw; padding-bottom: 5vh;">
+		  <div class="bandColumn">
+		    <img src="images/sub/david.png" alt="Nature" onclick="columnFunction1(this);">
+		  </div>
+		  <div class="bandColumn">
+		    <img src="images/sub/lucas.png" alt="Snow" onclick="columnFunction1(this);">
+		  </div>
+		  <div class="bandColumn">
+		    <img src="images/sub/johnny.png" alt="Mountains" onclick="columnFunction1(this);">
+		  </div>
+		  <div class="bandColumn">
+		    <img src="images/sub/soren.JPG" alt="Soren is a guitarist and singer- songwriter who started playing guitar in jazz band, moved to a quartet, and then joined Suburbamore. His favorite genres to play are jazz and indie pop. He’s a lifelong Los Gatos resident and you can often find him playing songs with his friends for the locals." onclick="columnFunction1(this);">
+		  </div>
+		  <div class="bandColumn">
+		    <img src="images/sub/ian.png" alt="Smoke" onclick="columnFunction1(this);">
+		  </div>
+		</div>
+		<div class="container" style="padding-bottom: 5vh;">
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+		  <div id="img1" style="background-image: url(images/sub/yard.jpg);"></div>
+		</div>
+		<div class="row" style="margin-left: 3vw;">
+		  <div class="bandColumn">
+		    <img src="images/sub/jack.png" alt="Nature" onclick="columnFunction2(this);">
+		  </div>
+		  <div class="bandColumn">
+		    <img src="images/sub/trevor.jpeg" alt="Snow" onclick="columnFunction2(this);">
+		  </div>
+		  <div class="bandColumn">
+		    <img src="images/sub/mitch.png" alt="Mountains" onclick="columnFunction2(this);">
+		  </div>
+		  <div class="bandColumn">
+		    <img src="images/sub/dylan.jpeg" alt="Names Al Shredda, Never seen Betta, wild strait lector but I’m really quite sensitive. I may be in the Army but I have feelings as well. Lover of music, hammocking and reading self-help books. I can make the best pancakes this side of the Mississippi (no matter-which side I’m on)." onclick="columnFunction2(this);">
+		  </div>
+		  <div class="bandColumn">
+		    <img src="images/sub/alice.png" alt="Smoke" onclick="columnFunction2(this);">
+		  </div>
+		</div>
+		<div class="container" style="padding-top: 5vh;">
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+		  <div id="img2" style="background-image: url(images/sub/house.jpg);"></div>
+		</div>
+		<div class="row" style="margin-left: 3vw; padding-top: 5vh; padding-bottom: 5vh;">
+		  <div class="bandColumn"><img src="images/sub/transparant.png"></div>
+		  <div class="bandColumn"><img src="images/sub/transparant.png"></div>
+		  <div class="bandColumn">
+		    <img src="images/sub/noah.jpeg" alt="I’m Noah! I don’t have an explicit role in Suburbamore. I’m the adviser of sorts. I help out wherever I can: be it in the form of input on the music front, or in the production of performances and videos. I write and record solo songs for voice and piano, perform in musicals, take pictures of my explorations (I drive and hike a lot), and I love to sail racing dinghies and otherwise being on the water. In college, I studied chemistry and nuclear science which I still very much enjoy. Day to day, I like browsing the depths of Wikipedia, finding remote stuff on satellite maps, and watching cartoons." onclick="columnFunction3(this);">
+		  </div>
+		</div>
+		<div class="container" style="padding-bottom: 5vh;">
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+		  <div id="img3" style="padding-top: 10vh; padding-bottom: 10vh;background-image: url(images/sub/sunset1.JPG);"></div>
+		</div> 
+		<div class="banner" style="padding-bottom: 0vh; font-size: 8vw; margin-top: 50vh;">
+			THE MUSIC
+		</div>
+		<div class="row">
+		  <div class="albumColumn">
+		    <img src="images/sub/beachHouse.png" alt="Nature" onclick="openAlb1(this);">
+		  </div>
+		</div>
+		<div class="container">
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+		  <iframe id="album1" style="border-radius:12px; height: 55vh;" src="https://open.spotify.com/embed/album/17hwb1FF7JMRfj0bzYt7D6?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+		</div>
+		<div class="row">
+		  <div class="albumColumn">
+		    <img src="images/sub/ATCCOVERBABY.png" alt="Nature" onclick="openAlb2(this);">
+		  </div>
+		</div>
+		<div class="container">
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+		  <iframe id="album2" style="border-radius:12px; height: 29vh;" src="https://open.spotify.com/embed/album/20PjRaOVJEmtnYH4NVFUba?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+		</div>
+		<div class="row">
+		  <div class="albumColumn">
+		    <img src="images/sub/join_the_band_cover.jpg" alt="Nature" onclick="openAlb3(this);">
+		  </div>
+		</div>
+		<div class="container">
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+		  <iframe id="album3" style="border-radius:12px; height: 33vh;" src="https://open.spotify.com/embed/album/3a8QxXLGZ9wu8dmp8fdfbA?utm_source=generator" frameBorder="0"allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+		</div>
+		<div class="row">
+		  <div class="albumColumn">
+		    <img src="images/sub/Whatever Works Front.jpeg" alt="Nature" onclick="openAlb4(this);">
+		  </div>
+		</div>
+		<div class="container">
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+		  <iframe id="album4" style="border-radius:12px; height: 67vh;" src="https://open.spotify.com/embed/album/6vP4VtWiNFp90XMAld9WMh?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+		</div>
+		<div class="row">
+		  <div class="albumColumn">
+		    <img src="images/sub/WWBsides.png" alt="Nature" onclick="openAlb5(this);">
+		  </div>
+		</div>
+		<div class="container">
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+		  <iframe id="album5" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1148550157&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+		  </iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-923165052" title="SUBURBAMORE" target="_blank" style="color: #cccccc; text-decoration: none;">SUBURBAMORE</a> · <a href="https://soundcloud.com/user-923165052/sets/whatever-works-demo-tapes" title="Whatever Works DEMO TAPES" target="_blank" style="color: #cccccc; text-decoration: none;">Whatever Works DEMO TAPES</a></div>
+		</div>
+		<!--div class="row">
+		  <div class="albumColumn">
+		    <img src="images/sub/self-titled.png" alt="Nature" onclick="columnFunction(this);">
+		  </div>
+		</div-->
+		<div class="banner" style="font-size: 8vw; margin-top: 25vh; margin-bottom: 17vh;">
+			<a href='mailto:justalouse@gmail.com'>CONTACT US</a>
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>
