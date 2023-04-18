@@ -72,25 +72,6 @@ body {
   z-index: 1;
 }
 
-.h2wpanel {
-}
-
-.h2wpanel img {
-   /* box effect */
-  margin-left: 5vw; margin-right: 5vw;
-  margin-top: 5vh; margin-bottom: 5vh;
-  width: 90%;
-
-  box-shadow: 0px 0px 15px grey;
-  border-radius: 7px;
-
-  transition: 0.2s;
-}
-
-.h2wpanel img:hover {
-  box-shadow: 0px 0px 15px black;
-}
-
 .panel overlay {
   /* overlay effects */
   position: relative;
@@ -190,6 +171,108 @@ body {
 #h2w:hover {
   background-color: rgba(220, 169, 245, 0.4);
   box-shadow: 0px 0px 15px grey;
+}
+
+#celine {
+  background-image: url(images/h2w/celine.jpg); 
+  height: 70vh;
+}
+
+#celine a {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  transition: 0.2s;
+}
+
+#celine a:hover {
+  background-color: rgba(126, 211, 237, 0);
+  box-shadow: 0px 0px 10px grey;
+}
+
+#adam {
+  background-image: url(images/h2w/adam.jpg); 
+  height: 70vh;
+}
+
+#adam a {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  transition: 0.2s;
+}
+
+#adam a:hover {
+  background-color: rgba(126, 211, 237, 0);
+  box-shadow: 0px 0px 10px grey;
+}
+
+#arthik {
+  background-image: url(images/h2w/arthik.jpg); 
+  height: 70vh;
+}
+
+#arthik a {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  transition: 0.2s;
+}
+
+#arthik a:hover {
+  background-color: rgba(126, 211, 237, 0);
+  box-shadow: 0px 0px 10px grey;
+}
+
+#colin {
+  background-image: url(images/h2w/colin.jpg); 
+  height: 70vh;
+}
+
+#colin a {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  transition: 0.2s;
+}
+
+#colin a:hover {
+  background-color: rgba(126, 211, 237, 0);
+  box-shadow: 0px 0px 10px grey;
+}
+
+#jose {
+  background-image: url(images/h2w/jose.jpg); 
+  height: 70vh;
+}
+
+#jose a {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  transition: 0.2s;
+}
+
+#jose a:hover {
+  background-color: rgba(126, 211, 237, 0);
+  box-shadow: 0px 0px 10px grey;
+}
+
+#alice {
+  background-image: url(images/h2w/alice.gif); 
+  height: 70vh;
+}
+
+#alice a {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  transition: 0.2s;
+}
+
+#alice a:hover {
+  background-color: rgba(126, 211, 237, 0);
+  box-shadow: 0px 0px 10px grey;
 }
 
 .row:after {
